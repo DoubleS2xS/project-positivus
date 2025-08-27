@@ -13,13 +13,13 @@ https://www.figma.com/design/fA0MzDIrcLo0XbL5xbRO0b/Positivus-Landing-Page-Desig
 
 - SCSS (Sass) with:
 
-  -- variables (colors, spacing, typography);
+  - variables (colors, spacing, typography);
 
-  -- mixins for breakpoints and media queries;
+  - mixins for breakpoints and media queries;
 
-  -- utility and global classes;
+  - utility and global classes;
 
-  -- custom fonts via @font-face.
+  - custom fonts via @font-face.
 
 - Responsive design using CSS Grid and Flexbox.
 
