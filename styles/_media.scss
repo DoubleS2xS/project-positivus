@@ -7,50 +7,66 @@ $tablet: 1023px;
 $mobile-above: 768px;
 $mobile: 767px;
 
-@mixin desktop-above{
-  @media (min-width: $desktop-above){
+$mobile-s-above: 481px;
+$mobile-s: 480px;
+
+@mixin desktop-above {
+  @media (min-width: $desktop-above) {
     @content;
   }
 }
 
-@mixin desktop{
-  @media (max-width: $desktop){
+@mixin desktop {
+  @media (max-width: $desktop) {
     @content;
   }
 }
 
-@mixin tablet-above{
-  @media (min-width: $tablet-above){
+@mixin tablet-above {
+  @media (min-width: $tablet-above) {
     @content;
   }
 }
 
-@mixin tablet{
-  @media (max-width: $tablet){
+@mixin tablet {
+  @media (max-width: $tablet) {
     @content;
   }
 }
 
-@mixin mobile-above{
-  @media (min-width: $mobile-above){
+@mixin mobile-above {
+  @media (min-width: $mobile-above) {
     @content;
   }
 }
 
-@mixin mobile{
-  @media (max-width: $mobile){
+@mixin mobile {
+  @media (max-width: $mobile) {
     @content;
   }
 }
 
-@mixin hover{
-  @media(hover: hover){
-    &:hover{
+@mixin mobile-s-above {
+  @media (min-width: $mobile-s-above) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: $mobile-s) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
       @content;
     }
   }
-  @media(hover: none){
-    &:active{
+
+  @media (hover: none) {
+    &:active {
       @content;
     }
   }
